@@ -1,6 +1,6 @@
 {
   "name": "html-tableify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert json to HTML table",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,11 @@
     "type": "git",
     "url": "https://github.com/LingyuCoder/html-tableify"
   },
-  "keywords": [],
+  "keywords": [
+    "html",
+    "tableify",
+    "json"
+  ],
   "bugs": {
     "url": "https://github.com/LingyuCoder/html-tableify/issues"
   },
