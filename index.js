@@ -7,7 +7,8 @@ const pretty = require('pretty');
 
 const DEFAULT_CONFIG = {
   tidy: true,
-  headers: null
+  headers: null,
+  border: null
 };
 
 module.exports = (data, config) => {
@@ -27,6 +28,6 @@ module.exports = (data, config) => {
     return `<tr>${$tds.join('')}</tr>`;
   });
   let $body = `<tbody>${$rows.join('')}</tbody>`;
-  let rst = `<table>${$header}${$body}</table>`;
+  let rst = `<table border= "${config.border || 0}">${$header}${$body}</table>`;
   return config.tidy ? pretty(rst) : rst;
 };
